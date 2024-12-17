@@ -1,0 +1,25 @@
+<!-- messageboard/templates/submit_message.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Message</title>
+</head>
+<body>
+    <h1>Submit a Message</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="sender_name">Your Name (A):</label><br>
+        <input type="text" id="sender_name" name="sender_name"><br><br>
+        
+        <label for="receiver_name">Recipient's Name (B):</label><br>
+        <input type="text" id="receiver_name" name="receiver_name"><br><br>
+
+        <label for="message_text">Your Message:</label><br>
+        <textarea id="message_text" name="message_text"></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
