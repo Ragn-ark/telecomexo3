@@ -6,4 +6,5 @@ urlpatterns = [
     path('helloworld', include('hello.urls')),
     path('helloworldhtml/', include('helloworldhtml.urls')),
     path('messageboard/', include('messageboard.urls')),
+    path('responses/', include('responses.urls')),
 ]
