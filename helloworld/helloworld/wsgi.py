@@ -8,9 +8,11 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 """
 
 import os
-
+import sys
 from django.core.wsgi import get_wsgi_application
 
+
+sys.path.insert(0, '/home/kali/Documents/telecom/exo3/helloworld')
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'helloworld.settings')
 
 application = get_wsgi_application()

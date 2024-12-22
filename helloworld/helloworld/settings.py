@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-73yl+h2g+8@)n4#ak_hcswdfbwcn)38kt$wak9_^*xx4xj4wxy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['hello.com']
 
 # Application definition
 
@@ -38,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hello',
+    'mod_wsgi.server',
     'helloworldhtml',
     'messageboard',
+    'responses',
 ]
 
 MIDDLEWARE = [
